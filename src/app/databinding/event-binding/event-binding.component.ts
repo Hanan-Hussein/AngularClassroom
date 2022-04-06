@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventBindingComponent{
 clicks=0
+someText:any;
   mybuttonClick(){
    this.clicks++;
   }
- 
+ inputText(elm:any){
+this.someText=elm.target.value;
+ }
 
 }
